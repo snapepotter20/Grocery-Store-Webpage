@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box model</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            /* background-color: rgb(152, 250, 240); */
+            background-image: url(https://is.gd/i0X0yR);
+            background-repeat: no-repeat;
+            background-size: 110%;
+        }
+        .stor{
+            background-color:rgb(243, 185, 134);
+            /* border:2px solid red ; */
+            border: 4px solid rgb(236, 60, 60);
+            border-radius: 20px;
+            color: rgb(10,10,10);
+            padding: 25px 45px;
+            margin: 30px 180px;
+            width: 800px;
+            text-align: center;
+        }
+       
+        
+        .wht{
+            color:yellow;
+            text-align: center;
+            box-sizing: border-box;
+        }
+        #Grocery{
+            border: 1px solid rgba(255, 0, 0, 0.993);
+            background-color: black;
+            color: red;
+            border-radius: 20px;
+            padding: 25px 45px;
+            margin: 30px 100px;
+            width: 500px;
+            /* text-align: center; */
+        
+        }
+        #Stationary{
+            border: 1px solid rgba(255, 0, 0, 0.993);
+            background-color: black;
+            color: red;
+            border-radius: 20px;
+            padding: 25px 45px;
+            margin: 30px 100px;
+            width: 500px;
+            /* text-align: center; */
+            
+        }
+        #Clothing{
+            border: 1px solid rgba(255, 0, 0, 0.993);
+            background-color: black;
+            color: red;
+            border-radius: 20px;
+            padding: 25px 45px;
+            margin: 30px 100px;
+            width: 500px;
+            /* text-align: center; */
+            
+        }
+        #grocstore{
+            color: whitesmoke;
+        }
+        #grocstore:hover{
+            background-color: rgb(160, 158, 158);
+            border: 1px solid whitesmoke;
+            cursor: pointer;
+        }
+        #head{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        .navbar{
+          background-color: rgb(238, 159, 69);
+          border-radius: 25px;
+      }
+      .navbar ul{
+          overflow: auto;
+      } 
+      .navbar li{
+          float: left;
+          list-style: none;
+          padding-top: 5px;
+          margin: 13px 15px;
+      }
+      .navbar li a{
+          padding: 12px 12px;
+          text-decoration: none;
+          color: rgb(5, 5, 5);
+      }
+      .navbar li a:hover{
+         background-color: whitesmoke;
+         color: rgb(238, 59, 53);
+      }
+      .search{
+          color: black;
+          float: right;
+          padding: 14px 75px;
+      }
+      .navbar input{
+          border: 2px solid  rgb(160, 61, 61);
+          border-radius: 20px;
+          padding: 3px 4px;
+          width: 150px;
+      }
+        </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contact us</a></li>
+                <div class="search">
+                    <input type="text" name="search" id="search" placeholder="Search">
+                </div>
+            </ul>
+        </nav>
+    </header>
+    <div class="stor">
+        <h1 id="head">Welcome to my general store </h1>
+        <div id="Grocery" >
+            <h3 class="wht">This is grocery store</h3>
+            <p>A grocery store, grocer or grocery shop, is a store primarily engaged in retailing a general  range of food products, which may be fresh or packaged. In everyday U.S. usage, however, "grocery store" is a synonym for supermarket, and is not used to refer to other types of stores that sell groceries.</p>
+            <div id="grocstore">
+              Select your item: <select name="myitem" id="grocery">
+                    <option value="Rice">Rice</option>
+                    <option value="Oil">Oil</option>
+                    <option value="Pulses">Pulses</option>
+                    <option value="Sugar">Sugar</option>
+                    <option value="Salt">Salt</option>
+                    <option value="Tea">Tea</option>
+                    <option value="Coffee">Coffee</option>
+                </select>
+            </div>
+    
+        </div>
+   
+   
+
+        <div id="Stationary" >
+            <h3 class="wht">This is stationary store</h3>
+            <p>Stationery is a mass noun referring to commercially manufactured writing materials, including cut paper, envelopes, writing implements, continuous form paper, and other office supplies. Stationery includes materials to be written on by hand or by equipment For example: computer printers.</p>
+            <div id="grocstore">
+                Select your item: <select name="myitem" id="grocery">
+                      <option value="Pen">Pen</option>
+                      <option value="Pencil">Pencil</option>
+                      <option value="Eraser">Eraser</option>
+                      <option value="Glue">Glue</option>
+                      <option value="Greeting card">Greeting card</option>
+                      <option value="Notebook">Notebook</option>
+                      <option value="Chart papers">Chart papers</option>
+                  </select>
+            </div>
+        </div>
+   
+       <div id="Clothing" >
+            <h3 class="wht">This is clothing store</h3>
+            <p>A clothes shop or clothes store is any shop which sells items of ready-made clothing. A small shop which sells expensive or designer clothing may be called a boutique. A shop that sells clothes for a narrowly-restricted market such as school uniforms or outdoor sports may be called an outfitter.</p>
+            <div id="grocstore">
+                Select your item: <select name="myitem" id="grocery">
+                      <option value="T-shirts">T-shirts</option>
+                      <option value="Jeans">Jeans</option>
+                      <option value="Formal shirts">Formal shirts</option>
+                      <option value="Plazo">Plazo</option>
+                      <option value="kurta/kurti">kuta/kurti</option>
+                      <option value="Suit">Suit</option>
+                      <option value="Lehngaa">Lehngaa</option>
+                  </select>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
